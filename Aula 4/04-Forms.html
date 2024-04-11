@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+<body>
+    
+    <main>
+        <form> 
+            <div>
+                <label for="inputNome">Nome:</label>
+                <input type="text" placeholder="Digite seu nome" id="inputNome" >
+            </div>
+            <div> 
+                <label for="inputEmail">Email:</label>
+                <input type="email" placeholder="Digite seu email" id="inputEmail">
+            </div>
+            <div>
+                <label for="inputSenha">Senha</label>
+                <input type="password" placeholder="Digite sua senha" id="inputSenha">
+            </div>
+            <div>
+                <label for="dataNascimento">Data de nascimento</label>
+                <input type="date" id="dataNascimento">
+            </div>
+            <div>
+                <label for="selectEstado">Selecione seu estado</label>
+                <select id="selectEstado">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    
+                </select>
+            </div>
+
+            <div>
+                <p>Escolha sua linguagem de programação preferida</p>
+                
+                <div>
+                    <label for="python">Python</label>
+                    <input type="radio" name="favLinguagens" id="python" value="python">
+                </div>
+                <div>
+                    <label for="Java">Java</label>
+                    <input type="radio" name="favLinguagens" id="Java" value="Java">
+                </div>
+
+                <div>
+                    <label for="csharp">C#</label>
+                    <input type="radio" name="favLinguagens" id="csharp" value="csharp">
+                </div>
+
+                <div>
+                    <label for="cplusplus">C++</label>
+                    <input type="radio" name="favLinguagens" id="cplusplus" value="cplusplus">
+                </div>
+
+                <div>
+                    <p>Selecione os items comprados</p>
+                    <input type="checkbox" id="refrigerante" name="refrigerante">
+                    <label for="refrigerante"> Refrigerante</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="doces" name="doces">
+                    <label for="doces"> Doces</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chocolate" name="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                </div>
+
+                <div> 
+                    <label for="txtArea">Fala pra mim da sua vida: </label> <br>    
+                    <textarea name="txtArea" id="txtArea" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Finalizar">
+        </form>
+    </main>
+    
+
+</body>
+</html>
