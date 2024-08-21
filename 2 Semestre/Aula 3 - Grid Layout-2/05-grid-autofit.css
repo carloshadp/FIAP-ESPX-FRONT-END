@@ -1,0 +1,19 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid darkgreen;
+    
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+    
+}
+
+.item {
+    padding: 10px;
+    background-color: pink;
+    color: #fff;
+    border: 10px solid #848;
+}
+
