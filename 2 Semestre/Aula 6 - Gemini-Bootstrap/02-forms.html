@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container py-5">
+        <div class="text-center">
+            <h1>Formulário</h1>
+            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor ullam odio, est sint itaque distinctio sed quaerat accusantium autem blanditiis soluta temporibus? Magni iusto velit voluptate repellendus, sunt esse autem!
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="surname" class="form-label">Surname</label>
+                            <input type="text" id="surname" class="form-control">
+                        </div>
+                        
+                        <div class="col-12 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" id="email" class="form-control" required>
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                               <input type="text" id="cep" class="form-control">
+                        </div>
+                        <div class="col-md-7 mb-3">
+                            <label for="endereco" class="form-label">Endereço</label>
+                            <input type="text" id="endereco" class="form-control">
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="Numero" class="form-label">Numero</label>
+                            <input type="text" id="Numero" class="form-control" required>
+                        </div>
+                        
+                        
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="pais" class="form-label">País</label>
+                            <select name="pais" id="pais" class="form-select">
+                                <option value="" selected disabled>Selecione</option>
+                                <option value="br">Brasil</option>
+                                <option value="uk">Ucrania</option>
+                                <option value="rs">Russia</option>
+                                <option value="ch">China</option>
+                                <option value="vz">Venezuela</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="estado" class="form-label">Estado</label>
+                            <select name="estado" id="estado" class="form-select">
+                                <option value="" selected disabled>Selecione</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceara</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="Numero" class="form-label">Numero</label>
+                            <select name="estado" id="estado" class="form-select">
+                                <option value="" selected disabled>Selecione</option>
+                                <option value="sp">1234567890</option>
+                                <option value="rj">0987654321</option>
+                                <option value="ba">1122334455</option>
+                                <option value="ce">0099887766</option>
+                                <option value="rs">1357911131</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <hr class="my-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" value="alma" id="alma">
+                            <label for="alma" class="form-check-label">Aceito as politicas de seguranca</label>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <button type="submit" class="btn btn-primary w-50" >Finalizar</button>
+                    </div>
+                    </form>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <script>(() => {
+            'use strict'
+          
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+          
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+              form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+          
+                form.classList.add('was-validated')
+              }, false)
+            })
+          })()</script>
+        
+        
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
